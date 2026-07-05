@@ -11,6 +11,8 @@
       "icon": "./assets/images/app-icon.png"
     },
     "android": {
+      "package": "com.ramsurat.portfolio",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#0b0b16",
         "foregroundImage": "./assets/images/adaptive-icon.png",

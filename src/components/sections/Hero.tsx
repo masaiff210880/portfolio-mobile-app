@@ -8,7 +8,6 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import {
-  ArrowRight,
   Download,
   Globe,
   MapPin,
@@ -257,32 +256,12 @@ export function Hero() {
 
           <Reveal delay={400}>
             <View className="mt-8 flex-row flex-wrap items-center gap-3">
-              <Button
-                size="lg"
-                iconRight={ArrowRight}
-                onPress={() => open(owner.resumeUrl)}
-              >
-                View my work
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                icon={Download}
-                onPress={handleResume}
-              >
-                Resume
-              </Button>
-            </View>
-          </Reveal>
-
-          <Reveal delay={480}>
-            <View className="mt-8 flex-row items-center gap-3">
               {socials.map((s) => (
                 <Button
                   key={s.name}
                   variant="outline"
                   size="sm"
-                  className="size-11 rounded-xl px-0 py-0"
+                  className="size-12 rounded-xl px-0 py-0"
                   onPress={() => open(s.href)}
                 >
                   <SocialIcon
@@ -292,6 +271,9 @@ export function Hero() {
                   />
                 </Button>
               ))}
+              <Button size="lg" icon={Download} onPress={handleResume}>
+                Resume
+              </Button>
             </View>
           </Reveal>
         </View>

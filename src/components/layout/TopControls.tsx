@@ -30,8 +30,8 @@ export function TopControls() {
     try {
       await Share.share({
         title: `${siteConfig.owner.name} — ${siteConfig.roleShort}`,
-        message: `Check out ${siteConfig.owner.name}'s portfolio: ${siteConfig.appUrl}`,
-        url: siteConfig.appUrl,
+        message: `Check out ${siteConfig.owner.name}'s portfolio app — tap to download it: ${siteConfig.downloadUrl}`,
+        url: siteConfig.downloadUrl,
       });
     } catch {
       /* user dismissed */

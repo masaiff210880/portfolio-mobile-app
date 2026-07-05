@@ -40,6 +40,12 @@ export const siteConfig = {
   contactRecipient: "ram.surat.web@gmail.com",
   /** URL shared by the in-app share button. */
   appUrl: "https://ram-app.github.io/",
+  /**
+   * Direct download for the latest Android APK. This "latest release" GitHub
+   * URL always resolves to the newest published APK asset of the same name.
+   */
+  downloadUrl:
+    "https://github.com/masaiff210880/portfolio-mobile-app/releases/latest/download/ram-surat-portfolio.apk",
 };
 
 export const navLinks = [
