@@ -30,14 +30,13 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#0b0b16",
-          "image": "./assets/images/profile.png",
-          "imageWidth": 140
+          "image": "./assets/images/splash-full.png",
+          "resizeMode": "cover"
         }
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }
