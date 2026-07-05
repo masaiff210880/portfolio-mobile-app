@@ -140,7 +140,10 @@ export function Preloader({ onDone }: { onDone: () => void }) {
           entering={FadeIn.delay(600).duration(600)}
           className="items-center gap-2"
         >
-          <Text numberOfLines={1} className="text-base font-semibold text-content">
+          <Text
+            numberOfLines={1}
+            className="text-base font-semibold text-content"
+          >
             Software Engineer
           </Text>
           <Text className="max-w-xs text-center text-xs text-muted">

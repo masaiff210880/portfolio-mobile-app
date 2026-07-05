@@ -50,10 +50,7 @@ export function TopControls() {
         }}
         className="flex-row items-center gap-2.5"
       >
-        <ProfileMark
-          className="size-10 border border-border"
-          fontSize={14}
-        />
+        <ProfileMark className="size-10 border border-border" fontSize={14} />
         <View>
           <Text numberOfLines={1} className="text-sm font-bold text-content">
             {siteConfig.owner.name}

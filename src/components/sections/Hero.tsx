@@ -65,7 +65,13 @@ function TechChip({ tech }: { tech: (typeof techStack)[number] }) {
 }
 
 /** A crisp platform icon chip floating around the avatar. */
-function PlatformChip({ Icon, size = 48 }: { Icon: LucideIcon; size?: number }) {
+function PlatformChip({
+  Icon,
+  size = 48,
+}: {
+  Icon: LucideIcon;
+  size?: number;
+}) {
   const { colors } = useTheme();
   return (
     <Glass
@@ -180,7 +186,10 @@ export function Hero() {
                 className="flex-row items-center gap-2 rounded-xl px-3 py-2"
               >
                 <Sparkles size={14} color={colors.primary} />
-                <Text numberOfLines={1} className="text-sm font-medium text-content">
+                <Text
+                  numberOfLines={1}
+                  className="text-sm font-medium text-content"
+                >
                   3+ yrs
                 </Text>
               </Glass>
@@ -191,7 +200,10 @@ export function Hero() {
               style={{ position: "absolute", bottom: -8, left: "32%" }}
             >
               <Glass variant="glass" className="rounded-xl px-3 py-2">
-                <Text numberOfLines={1} className="text-sm font-medium text-content">
+                <Text
+                  numberOfLines={1}
+                  className="text-sm font-medium text-content"
+                >
                   25+ projects
                 </Text>
               </Glass>
